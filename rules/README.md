@@ -8,10 +8,37 @@ This is how you operate day-to-day. Short, actionable, load-bearing.
 
 Copy individual rule files into **`~/.claude/rules/`**.
 
-Then reference them from your `~/.claude/CLAUDE.md` (or via the
-`additionalDirectories` / loading mechanism your Claude Code setup uses —
-check the current Claude Code docs, as the loading pattern has changed
-over versions).
+**Claude Code auto-discovers every `.md` file in that directory** at the
+start of every session — no configuration needed. Subdirectories are
+searched recursively, so you can organize by concern:
+`~/.claude/rules/frontend/`, `~/.claude/rules/backend/`, etc.
+
+**No reference from `~/.claude/CLAUDE.md` is required.** Discovery is automatic.
+
+### Project-scoped rules
+
+Same pattern works for project-specific rules: put them in
+`<project>/.claude/rules/*.md`. Project rules load after user-global
+rules, so project rules win on conflict.
+
+### Debugging
+
+In any Claude Code session, run `/memory` to see every file that's
+currently loaded, in order. If a rule file isn't listed, it isn't
+being loaded — check the filename (must end in `.md`) and path.
+
+### Optional: `@` imports
+
+If you want to reference a rule explicitly from a CLAUDE.md rather than
+rely on auto-discovery, use `@`-import syntax:
+
+```markdown
+@~/.claude/rules/coding-style.md
+@docs/architecture.md
+```
+
+Useful when you want a specific load order or when your rule lives
+outside the standard directories.
 
 ---
 

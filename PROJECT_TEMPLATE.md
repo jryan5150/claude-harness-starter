@@ -17,6 +17,25 @@
 
 ---
 
+## Not In Scope
+
+<!--
+  **The most valuable section of the template — which is why it's placed early.**
+  What did you explicitly decide NOT to build? And why?
+
+  Context prevention beats context addition. Telling Claude "no real-time"
+  up front saves it from volunteering every WebSocket-shaped feature you
+  rejected. Historical trade-offs evaporate if you don't capture them
+  somewhere — this is where they live.
+
+  Examples:
+  - "No real-time updates — polling is good enough, WebSocket cost isn't worth it."
+  - "No multi-tenancy — single-tenant by design, will never be multi."
+  - "No admin UI — managed via CLI, UI would be a maintenance tax."
+-->
+
+---
+
 ## Stack
 
 <!--
@@ -45,6 +64,28 @@
 - Lint / format: `...`
 - Build: `...`
 - Deploy: `...`
+
+---
+
+## Key Entrypoints
+
+<!--
+  Where should a new collaborator (human or Claude) start reading?
+  Name the 2-5 most important files or directories and say why each matters.
+
+  This saves Claude from scanning the entire tree to find orientation,
+  and saves a human onboarder from a wild goose chase.
+
+  Examples:
+  - `src/server.ts` — app bootstrap and route registration.
+  - `src/routes/` — all HTTP handlers, one file per resource.
+  - `src/domain/` — business logic, pure functions, heavily tested.
+  - `scripts/seed.ts` — populate a fresh dev database.
+-->
+
+- `[path]` — ...
+- `[path]` — ...
+- `[path]` — ...
 
 ---
 
@@ -92,23 +133,6 @@
   Things that would trip up a new collaborator.
 
   This is one of the highest-value sections. Fill it ruthlessly.
--->
-
----
-
-## Not In Scope
-
-<!--
-  The most valuable section of the template.
-  What did you explicitly decide NOT to build? And why?
-
-  Prevents scope creep, prevents Claude from volunteering features you rejected,
-  and preserves context about trade-offs that would otherwise evaporate.
-
-  Examples:
-  - "No real-time updates — polling is good enough, WebSocket cost isn't worth it."
-  - "No multi-tenancy — single-tenant by design, will never be multi."
-  - "No admin UI — managed via CLI, UI would be a maintenance tax."
 -->
 
 ---

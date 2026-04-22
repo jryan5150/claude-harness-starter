@@ -89,6 +89,23 @@ Examples of the shape:
 
 ---
 
+## What I've Changed My Mind About
+
+> A strong philosophy has failure modes. The convictions you've abandoned
+> reveal more about your thinking texture than the ones you currently hold.
+> If you can't name things you used to believe and don't anymore, your
+> philosophy is either too young or too guarded to be honest.
+
+Examples of the shape:
+
+- "I used to think [X]. Now I think [Y] because [what changed my mind]."
+- "I used to optimize for [A]. Now I think [A] was a proxy for [B],
+  and optimizing for [B] directly was always the right move."
+
+<!-- Your abandoned convictions. 2-5. -->
+
+---
+
 ## What I'm Still Figuring Out
 
 > Optional section, but useful.
