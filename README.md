@@ -21,6 +21,23 @@ never compound.
 
 This scaffold fixes it by splitting your context across four layers.
 
+### Who this is for — and who it isn't
+
+**This scaffold is right for you if:**
+
+- You work on **3+ active projects** and notice yourself re-typing the same preferences in each
+- You've **corrected Claude on the same operational mistake twice** (the threshold for promoting a rule out of project-local memory)
+- Your existing `CLAUDE.md` files have **drifted into mutual disagreement**
+- You want **rules added today to benefit projects you haven't started yet**
+
+**Skip this scaffold if:**
+
+- You've **never corrected Claude.** Use Claude Code normally for a month first; you have nothing to put in Layer 1 or Layer 2 yet.
+- You're a **one-project developer.** A single well-tended `CLAUDE.md` at that project's root beats this whole architecture.
+- You're in a **team with established conventions.** Your personal Layer 1 and Layer 2 may conflict with team norms; the scaffold assumes you author your own harness.
+
+The full *"When NOT to adopt this scaffold"* section is below for the deeper version.
+
 ---
 
 ## The Four Layers
@@ -237,6 +254,11 @@ that are mostly ignored.
 
 - **Claude Code docs** — the authoritative source for loading, memory,
   and settings. Search `docs.claude.com` for the current path.
+- **[Four-Layer Context Architecture](https://github.com/jryan5150/portfolio/tree/main/methodologies/four-layer-context)** —
+  the methodology page in [Jace Ryan's portfolio](https://github.com/jryan5150/portfolio)
+  that describes the pattern in pattern-language form (when to use, when
+  NOT to use, how it pairs with sister methodologies, foundational sources).
+  This scaffold is the productized OSS-instance of that methodology.
 - **[Keep a Changelog](https://keepachangelog.com/)** — format used by
   this repo's `CHANGELOG.md`.
 

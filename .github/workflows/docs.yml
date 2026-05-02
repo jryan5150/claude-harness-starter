@@ -1,0 +1,43 @@
+name: Docs CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Markdown lint
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: |
+            **/*.md
+            !node_modules
+        continue-on-error: false
+
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Link Check
+        uses: lycheeverse/lychee-action@v1
+        with:
+          # Skip private GitHub URLs and common false-positive patterns
+          args: >-
+            --no-progress
+            --max-concurrency 4
+            --exclude-mail
+            --exclude '^https?://localhost'
+            --exclude '^https?://127\.0\.0\.1'
+            **/*.md
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

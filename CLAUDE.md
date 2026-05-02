@@ -129,3 +129,22 @@ Supporting files:
 
 No formal decision log for this repo yet. Material decisions are captured
 in commit messages and `CHANGELOG.md`.
+
+---
+
+## JRF Framework Inheritance
+
+This project inherits from the [Jace Ryan Framework](file://~/.claude/framework/) at `~/.claude/framework/`:
+
+| File | Consult When |
+|------|--------------|
+| `GLOBAL_PROTOCOL_v2.md` | Any architectural decision, axiom check, or dispatch-quality assessment |
+| `SKILL_CHEST_v2.md` | Think-phase brainstorming — pull 1-3 analytical lenses; run Baseline Gate first |
+| `LEARNING_LEDGER.md` | Recognize cross-project debt patterns before paying tuition twice (78 entries, 11 themes) |
+| `CLAUDE_MD_TEMPLATE.md` | Scaffolding template for new project bounded contexts |
+
+**Foundational NotebookLM sources:**
+- **NLM-01** — Pearl & Mackenzie, *The Book of Why* — causal reasoning (`https://notebooklm.google.com/notebook/5908971e-cffe-4dcb-b216-64715bc19dc8`)
+- **NLM-02** — Meadows, *Thinking in Systems* — systems thinking, leverage points (`https://notebooklm.google.com/notebook/606bca6a-5787-4f21-8ff4-5459ab252fe7`)
+
+**Bidirectional debt-ledger discipline:** When this project encounters a debt or learning pattern that generalizes beyond it, append to the project-local ledger AND consider promoting to the framework `LEARNING_LEDGER.md` (it's append-only; numbering is permanent). The cross-project ledger feeds back: when designing a new feature, scan its 11 recurring themes first.
