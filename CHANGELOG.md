@@ -5,6 +5,45 @@ All notable changes to this scaffold will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- `SECURITY.md` — security policy with private vulnerability reporting via
+  GitHub Security Advisories. Honest framing of the thin attack surface
+  for a markdown-only scaffold.
+- `CONTRIBUTING.md` — explicit in-scope vs out-of-scope contribution guide.
+  The "no philosophy" constraint is now load-bearing in PR review.
+- `.github/workflows/docs.yml` — markdownlint + lychee link-check CI on
+  every push and pull request. The "tests passing" pattern in prose-only
+  repos.
+- `.github/ISSUE_TEMPLATE/{bug,missing_example,identity_review}.md` —
+  three structured issue surfaces. The Filled-IDENTITY-Review template
+  invites public-IDENTITY conversations as a deliberate community feature.
+- `.github/PULL_REQUEST_TEMPLATE.md` — checklist enforces scope constraints
+  (no language opinions, no curated rule libraries, no Claude Code feature
+  documentation belonging upstream).
+- `.github/.markdownlint.json` — config tolerant of long lines, sibling
+  duplicate headers in CHANGELOGs, and HTML in markdown (HTML-comment
+  prompts are load-bearing UX in scaffolds).
+- "Who this is for — and who it isn't" mini-section near the top of
+  `README.md`. Lets users self-filter early without scrolling to the
+  bottom-positioned "When NOT to adopt this scaffold" section.
+- Cross-link from `README.md` to the [Four-Layer Context Architecture
+  methodology page](https://github.com/jryan5150/portfolio/tree/main/methodologies/four-layer-context)
+  in the related portfolio. The methodology page is the pattern-language
+  version; this scaffold is the OSS-instance.
+- `CLAUDE.md` updated with JRF Framework Inheritance block — references
+  upstream `LEARNING_LEDGER.md` and the Pearl + Meadows NotebookLM
+  foundational sources.
+
+### Fixed
+
+- The doc-vs-reality drift flagged in the 2026-05-02 OSS audit. README's
+  *"Released: 2026-04-22 (v0.1 → v0.2.0)"* claim now backed by an actual
+  GitHub release tag (`v0.2.0`, retroactively cut against the original
+  release commit).
+
 ## [0.2.0] — 2026-04-22
 
 Major improvements responding to self-critique of v0.1.0. Focus: making
