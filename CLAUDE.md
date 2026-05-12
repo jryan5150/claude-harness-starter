@@ -136,15 +136,16 @@ in commit messages and `CHANGELOG.md`.
 
 This project inherits from the [Jace Ryan Framework](file://~/.claude/framework/) at `~/.claude/framework/`:
 
-| File | Consult When |
-|------|--------------|
-| `GLOBAL_PROTOCOL_v2.md` | Any architectural decision, axiom check, or dispatch-quality assessment |
-| `SKILL_CHEST_v2.md` | Think-phase brainstorming — pull 1-3 analytical lenses; run Baseline Gate first |
-| `LEARNING_LEDGER.md` | Recognize cross-project debt patterns before paying tuition twice (78 entries, 11 themes) |
-| `CLAUDE_MD_TEMPLATE.md` | Scaffolding template for new project bounded contexts |
+| File                    | Consult When                                                                                                                                          |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `GLOBAL_PROTOCOL_v2.md` | Any architectural decision, axiom check, or dispatch-quality assessment                                                                               |
+| `SKILL_CHEST_v2.md`     | Think-phase brainstorming — pull 1-3 analytical lenses; run Baseline Gate first                                                                       |
+| `LEARNING_LEDGER.md`    | Cross-project promoted debt patterns — read before designing, picking a stack, or repeating (v0.3: 20 entries, 8 themes — append-only, IDs permanent) |
+| `CLAUDE_MD_TEMPLATE.md` | Scaffolding template for new project bounded contexts                                                                                                 |
 
 **Foundational NotebookLM sources:**
-- **NLM-01** — Pearl & Mackenzie, *The Book of Why* — causal reasoning (`https://notebooklm.google.com/notebook/5908971e-cffe-4dcb-b216-64715bc19dc8`)
-- **NLM-02** — Meadows, *Thinking in Systems* — systems thinking, leverage points (`https://notebooklm.google.com/notebook/606bca6a-5787-4f21-8ff4-5459ab252fe7`)
 
-**Bidirectional debt-ledger discipline:** When this project encounters a debt or learning pattern that generalizes beyond it, append to the project-local ledger AND consider promoting to the framework `LEARNING_LEDGER.md` (it's append-only; numbering is permanent). The cross-project ledger feeds back: when designing a new feature, scan its 11 recurring themes first.
+- **NLM-01** — Pearl & Mackenzie, _The Book of Why_ — causal reasoning (`https://notebooklm.google.com/notebook/5908971e-cffe-4dcb-b216-64715bc19dc8`)
+- **NLM-02** — Meadows, _Thinking in Systems_ — systems thinking, leverage points (`https://notebooklm.google.com/notebook/606bca6a-5787-4f21-8ff4-5459ab252fe7`)
+
+**Bidirectional debt-ledger discipline:** When this project encounters a debt or learning pattern that generalizes beyond it, append to the project-local ledger AND consider promoting to the framework `LEARNING_LEDGER.md` (it's append-only; IDs are permanent; entries can be deprecated but never deleted). The cross-project ledger feeds back: when designing a new feature, scan the active themes first (currently: `truth-surface`, `ux-from-workflow`, `design-conviction`, `validation-discipline`, `framework-integrity`, `search-discipline`, `velocity-discipline`, `rescue-pattern`, `architecture-integrity` — see the ledger itself for the canonical list, which grows bottom-up as third entries land in a pattern).

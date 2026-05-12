@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- `CLAUDE.md` — retracted false framework-inheritance claim that `LEARNING_LEDGER.md` contained _"78 entries, 11 themes."_ Audit on 2026-05-11 (in a JRF-update session) confirmed the file did not exist anywhere — public or private, local or remote, in any `jryan5150` or `Lexcom-Systems-Group-Inc` repo. The number was fabricated and shipped through v0.1 and v0.2.0 unchallenged. The file was then created with real seed entries (12 in v0.1, 20 in v0.3) and the row updated to reflect actual contents. The "scan its 11 recurring themes first" sentence in the bidirectional debt-ledger paragraph was similarly corrected to enumerate the actual themes and point at the ledger as the canonical list. **The retraction is preserved in the ledger's own v0.3 entry L009 (`Framework references must point at things that exist`)** so the corrective lesson outlives this CHANGELOG entry.
+
 ### Added
 
 - `SECURITY.md` — security policy with private vulnerability reporting via
@@ -40,7 +44,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - The doc-vs-reality drift flagged in the 2026-05-02 OSS audit. README's
-  *"Released: 2026-04-22 (v0.1 → v0.2.0)"* claim now backed by an actual
+  _"Released: 2026-04-22 (v0.1 → v0.2.0)"_ claim now backed by an actual
   GitHub release tag (`v0.2.0`, retroactively cut against the original
   release commit).
 
