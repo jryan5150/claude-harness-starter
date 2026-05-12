@@ -124,9 +124,16 @@ handle everything else.
 
 ### Step 3 — Identity (slow)
 
-Copy `IDENTITY.md` somewhere permanent. A folder like `~/projects/framework/`
-or `~/.claude/IDENTITY.md` works. Keep it outside any single project —
-it's not project-specific.
+Start your personal identity file by copying the template:
+
+```bash
+cp IDENTITY.template.md IDENTITY.md
+```
+
+`IDENTITY.md` is gitignored — your personal convictions won't be
+committed if you fork this repo. Move it somewhere permanent later
+(`~/projects/framework/IDENTITY.md` or `~/.claude/IDENTITY.md`) if
+you prefer it outside the scaffold; it's not project-specific.
 
 Reference `IDENTITY.example.md` for a fictional worked example showing
 what a filled identity file looks like. Don't copy Jordan's content —
@@ -254,11 +261,6 @@ that are mostly ignored.
 
 - **Claude Code docs** — the authoritative source for loading, memory,
   and settings. Search `docs.claude.com` for the current path.
-- **[Four-Layer Context Architecture](https://github.com/jryan5150/portfolio/tree/main/methodologies/four-layer-context)** —
-  the methodology page in [Jace Ryan's portfolio](https://github.com/jryan5150/portfolio)
-  that describes the pattern in pattern-language form (when to use, when
-  NOT to use, how it pairs with sister methodologies, foundational sources).
-  This scaffold is the productized OSS-instance of that methodology.
 - **[Keep a Changelog](https://keepachangelog.com/)** — format used by
   this repo's `CHANGELOG.md`.
 

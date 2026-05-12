@@ -7,12 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Fixed
-
-- `CLAUDE.md` — retracted false framework-inheritance claim that `LEARNING_LEDGER.md` contained _"78 entries, 11 themes."_ Audit on 2026-05-11 (in a JRF-update session) confirmed the file did not exist anywhere — public or private, local or remote, in any `jryan5150` or `Lexcom-Systems-Group-Inc` repo. The number was fabricated and shipped through v0.1 and v0.2.0 unchallenged. The file was then created with real seed entries (12 in v0.1, 20 in v0.3) and the row updated to reflect actual contents. The "scan its 11 recurring themes first" sentence in the bidirectional debt-ledger paragraph was similarly corrected to enumerate the actual themes and point at the ledger as the canonical list. **The retraction is preserved in the ledger's own v0.3 entry L009 (`Framework references must point at things that exist`)** so the corrective lesson outlives this CHANGELOG entry.
-
 ### Added
 
+- `.gitignore` — `IDENTITY.md` is now gitignored. Downstream users `cp IDENTITY.template.md IDENTITY.md` to start their personal identity file without risk of accidentally committing it to a fork.
 - `SECURITY.md` — security policy with private vulnerability reporting via
   GitHub Security Advisories. Honest framing of the thin attack surface
   for a markdown-only scaffold.
@@ -33,13 +30,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - "Who this is for — and who it isn't" mini-section near the top of
   `README.md`. Lets users self-filter early without scrolling to the
   bottom-positioned "When NOT to adopt this scaffold" section.
-- Cross-link from `README.md` to the [Four-Layer Context Architecture
-  methodology page](https://github.com/jryan5150/portfolio/tree/main/methodologies/four-layer-context)
-  in the related portfolio. The methodology page is the pattern-language
-  version; this scaffold is the OSS-instance.
-- `CLAUDE.md` updated with JRF Framework Inheritance block — references
-  upstream `LEARNING_LEDGER.md` and the Pearl + Meadows NotebookLM
-  foundational sources.
+
+### Changed
+
+- `IDENTITY.md` renamed to `IDENTITY.template.md`. The repo now ships two demonstration files (`IDENTITY.template.md` — guided scaffold with section prompts; `IDENTITY.example.md` — fictional Jordan Chen persona) and downstream users create their own gitignored `IDENTITY.md` locally. Removes the trap where forking + editing in place would publish personal identity content.
 
 ### Fixed
 

@@ -1,5 +1,14 @@
 # Identity — [Your Name]
 
+> ⚠️ **This is a template.** Copy it before editing:
+>
+> ```bash
+> cp IDENTITY.template.md IDENTITY.md
+> ```
+>
+> `IDENTITY.md` is gitignored so your personal convictions stay local.
+> Edit the copy, not this file.
+
 > **Layer 1 of the harness.** Your building philosophy.
 > Stable across projects. Personal, not prescriptive.
 > Fill in over weeks, not an afternoon.

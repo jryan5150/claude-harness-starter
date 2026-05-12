@@ -1,0 +1,13 @@
+# Personal identity file — copy IDENTITY.template.md to IDENTITY.md to start.
+# Your own convictions stay local and never get committed to a fork.
+IDENTITY.md
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor scratch
+*.swp
+*.swo
+.vscode/
+.idea/
